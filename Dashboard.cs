@@ -40,7 +40,14 @@ namespace CRUDMahasiswaADO
             isInitializing = false;
             loadDataChart();
 
-            private void btnLoad_Click(object sender, EventArgs e)
+        }
+
+        DAL dbLogic = new DAL();
+        bool isInitializing = true;
+        DataTable dt;
+        int button = 0;
+
+        private void btnLoad_Click(object sender, EventArgs e)
         {
             button = 1;
             loadDataChart();
@@ -54,19 +61,10 @@ namespace CRUDMahasiswaADO
 
         private void btnDataMahasiswa_Click(object sender, EventArgs e)
         {
-            Form1 formMhs = new Form1();
-            formMhs.Show();
+            btnDataMahasiswa frm1 = new DataMahasiswa();
+            frm1.Show();
             this.Hide();
         }
-        }
-
-        DAL dbLogic = new DAL();
-        bool isInitializing = true;
-        DataTable dt;
-        int button = 0;
-
-
-
     }
 
     
