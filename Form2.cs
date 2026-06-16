@@ -12,7 +12,7 @@ namespace CRUDMahasiswaADO
         SqlConnection conn = new SqlConnection(connectionString);
         SqlDataAdapter da;
         DataTable dtMahasiswa;
-        DataTable dtProdi;.
+        DataTable dtProdi;
 
         public Form2()
         {
